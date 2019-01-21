@@ -59,17 +59,22 @@ class Content extends Component {
         const {selected, beerName} = this.state;
 
         return <Col lg={8} sm={6} xs={12} className='content-body'>
-            <Nav bsStyle="pills" activeKey={selected} onSelect={this.handleSelect}>
-              <NavItem eventKey='home' title='home'>
-                NavItem home content
-              </NavItem>
-              <NavItem eventKey='item' title="Item">
-                NavItem Item content
-              </NavItem>
-              <NavItem eventKey='3' title='Item 3'>
-                NavItem 3 content
-              </NavItem>
-            </Nav>
+        {/*  <Nav bsStyle="pills" activeKey={selected} onSelect={this.handleSelect}>
+            <NavItem eventKey='home' title='home'>
+          NavItem home content
+          </NavItem>
+        <NavItem eventKey='item' title="Item">
+        NavItem Item content
+          </NavItem>
+            <NavItem eventKey='3' title='Item 3'>
+              NavItem 3 content
+            </NavItem>
+          </Nav>
+*/}
+          <h2>
+          Поиск пива по названию
+          </h2>
+
             <FindBeer submitHandler={this.setBeerName}/>
             {beerName && <BeerList beerName={beerName}/>}
         </Col>;

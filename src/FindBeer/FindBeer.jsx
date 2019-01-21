@@ -35,7 +35,7 @@ class FindBeer extends React.Component {
                 value={beerName}
                 onChange={this.changeInput}/>
             <button type='submit'>
-                Search
+                Поиск 
             </button>
         </form>
     }
